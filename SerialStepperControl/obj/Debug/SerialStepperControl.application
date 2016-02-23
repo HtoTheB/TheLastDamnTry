@@ -7,14 +7,14 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="SerialStepperControl.exe.manifest" size="3601">
+    <dependentAssembly dependencyType="install" codebase="SerialStepperControl.exe.manifest" size="3530">
       <assemblyIdentity name="SerialStepperControl.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>no/H29WNiB607Wy7TamJ7XaFTn+WHnSdh521H1YaW+s=</dsig:DigestValue>
+        <dsig:DigestValue>A+hv/P+M3qbCt91inDGxQWxmxbK6QHo+rRqsIOqXY+g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

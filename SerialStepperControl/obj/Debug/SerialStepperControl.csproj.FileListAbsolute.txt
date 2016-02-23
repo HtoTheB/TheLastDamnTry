@@ -57,3 +57,17 @@ C:\Users\Henrik\Desktop\JuFo 2016\SerialStepperControl\SerialStepperControl\bin\
 C:\Users\Henrik\Desktop\JuFo 2016\SerialStepperControl\SerialStepperControl\bin\Debug\SerialStepperControl.pdb
 C:\Users\Henrik\Desktop\JuFo 2016\SerialStepperControl\SerialStepperControl\obj\Debug\SerialStepperControl.exe.manifest
 C:\Users\Henrik\Desktop\JuFo 2016\SerialStepperControl\SerialStepperControl\obj\Debug\SerialStepperControl.application
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\bin\Debug\SerialStepperControl.exe.config
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\obj\Debug\SerialStepperControl.exe
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\obj\Debug\SerialStepperControl.pdb
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\obj\Debug\SerialStepperControl.csprojResolveAssemblyReference.cache
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\obj\Debug\SerialStepperControl.Form1.resources
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\obj\Debug\SerialStepperControl.Properties.Resources.resources
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\obj\Debug\SerialStepperControl.Rotator.resources
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\obj\Debug\SerialStepperControl.csproj.GenerateResource.Cache
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\bin\Debug\SerialStepperControl.exe.manifest
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\bin\Debug\SerialStepperControl.application
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\bin\Debug\SerialStepperControl.exe
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\bin\Debug\SerialStepperControl.pdb
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\obj\Debug\SerialStepperControl.exe.manifest
+C:\Users\Baws\Source\Repos\TheLastDamnTry\SerialStepperControl\obj\Debug\SerialStepperControl.application
