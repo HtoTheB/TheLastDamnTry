@@ -12,11 +12,11 @@ namespace SerialStepperControl
         int nSpeed = 800;
         public SerialPort port { get;  private set; }
         private string receivedString;
-        Rotator senderRot;
 
-        public bool init(Rotator getSender)
+
+
+        public bool init()
         {
-            senderRot = getSender;
             try
             {
                 port = new SerialPort("COM4");
@@ -59,12 +59,23 @@ namespace SerialStepperControl
             else return "\n SendCom failed";
         }
 
+        public delegate void dataReceivedHandler(object sender, ComEventArgs e);// Handler für das Event, welcher von anderen Klassen implementiert werden kann       
+        public event dataReceivedHandler dataRecievedEvent; // das Event mit dataReceivedHandler als Handler; Wird mit den Parameter des Handlers aufgerufen
+
         private void port_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             receivedString = port.ReadExisting();
-            senderRot.PortDataReceived(receivedString);
-            //(ValidSender)sender.PortDataReceived(receivedString);
-            //Hier Empfangslogik hinzufügen
+            if (dataRecievedEvent != null)
+                dataRecievedEvent(this, new ComEventArgs() {ReceivedString = receivedString}); // Übergebe den Auslöser dieses Events und Event Argumente die unseren empfangenen String enthalten
+            else
+            {
+                Console.WriteLine("ERROR: dataReceivedEvent null");
+            }
         }
     }
+}
+
+public class ComEventArgs : EventArgs // Eigene Event Argumente die zusätzlich einen String enthalten
+{
+    public string ReceivedString;
 }

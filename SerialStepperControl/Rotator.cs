@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SerialStepperControl
 {
-    public partial class Rotator : Form, ValidSender
+    public partial class Rotator : Form
     {
         double posX, posY, posZ, rotX, rotY, rotZ, rotS;
 
@@ -27,8 +27,9 @@ namespace SerialStepperControl
             posZ = 0f;
             
             myKartoffel = new ComKartoffel();
+            myKartoffel.dataRecievedEvent += new ComKartoffel.dataReceivedHandler(PortDataReceived); // Füge die Methode PortDataReceived dieser Klasse als Handler für das dataReceivedEvent hinzu
 
-            label_Debug.Text += "Port opened: " + myKartoffel.init(this);
+            label_Debug.Text += "Port opened: " + myKartoffel.init();
         }
 
         private void label_Return_Click(object sender, EventArgs e)
@@ -67,9 +68,9 @@ namespace SerialStepperControl
                 Convert.ToInt32(moveSpeed));
         }
 
-        public void PortDataReceived (string debugString)
+        public void PortDataReceived (object sender, ComEventArgs e)
         {
-            //label_Return.Text += ("\n" + debugString);
+            label_Return.Text += ("\n" + e.ReceivedString);
         }
 
         #region myMath
